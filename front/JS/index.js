@@ -4,7 +4,7 @@ let container = document.getElementById("items");
 
 const display = produit => {
     container.innerHTML += `
-    <a href="./product.html?id=${produit.id}">
+    <a href="./product.html?id=${produit._id}">
             <article>
               <img src="${produit.imageUrl}" alt="${produit.altTxt}">
               <h3 class="productName">${produit.name}</h3>
