@@ -28,9 +28,9 @@ const display = prod_kanap => {
       <div class="item__content__settings">
         <div class="item__content__settings__color">
           <label for="color-select">Choisir une couleur :</label>
-          <select name="color-select" id="colors">
-              <option value="">--SVP, choisissez une couleur --</option>
-            
+          <select name="color-select" id="color">
+              <option value = "">${prod_kanap.color}</option>
+
           </select>
         </div>
 
@@ -40,7 +40,7 @@ const display = prod_kanap => {
         </div>
       </div>
 
-      <div class="item__content__addButton">
+      <div class="item__content__addButton" id="panier">
         <button id="addToCart">Ajouter au panier</button>
       </div>
 
@@ -50,9 +50,9 @@ const display = prod_kanap => {
 
 
     // console.log (produit.colors) //
-    for (let color of prod_kanap.color){
-        document.getElementById('colors').innerHTML+=
-        `<option value="${color}">${color}</option>`
+    for (let color of prod_kanap.colors){
+        document.getElementById('color').innerHTML+=
+        `<option value=${color}>${color}</option>`
     }
 
     // Ecoute evenemnt au click + FNCT ajouter ProdPanier //
