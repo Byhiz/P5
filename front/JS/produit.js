@@ -29,7 +29,7 @@ const display = prod_kanap => {
         <div class="item__content__settings__color">
           <label for="color-select">Choisir une couleur :</label>
           <select name="color-select" id="color">
-              <option value = "">${prod_kanap.color}</option>
+              
 
           </select>
         </div>
